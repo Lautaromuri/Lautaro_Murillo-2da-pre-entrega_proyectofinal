@@ -1,0 +1,84 @@
+.padding-margin-none{
+    padding: 0;
+    margin: 0;
+}
+
+.decoration-none{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-style-tittle{
+    color: #80dce0;
+    text-decoration: underline;
+}
+
+.text-style-contact{
+    color: rgb(187, 187, 187);
+    text-decoration: underline;
+}
+
+.text{
+    color: white;
+}
+
+.background-black{
+    background-color: black;
+}
+
+.prueba{
+    display: inline-block;
+}
+
+.img{
+    height: 30px;
+}
+
+.contenedor-img{
+    width: auto;
+    height: 30px;
+    padding: 0;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+}
+
+/* Contenedor */
+
+header{
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://884e910d64.clvaw-cdnwnd.com/c9bf1596b060169a98f1c40490d409e7/200000189-8f10f8f111/Reparaciones-De-Computadoras.jpeg?ph=884e910d64);
+    background-color: #80dce0;
+    object-fit: cover
+}
+
+nav ul{
+    height: 50px
+}
+
+nav ul li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px white solid;
+}
+
+@media screen {
+    nav ul{
+        height: auto;
+    }    
+}

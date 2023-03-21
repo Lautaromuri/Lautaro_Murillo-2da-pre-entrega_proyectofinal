@@ -102,8 +102,66 @@ nav ul li{
     height: 300px;
 }
 
-@media screen {
-    nav ul{
-        height: auto;
+@media screen and (max-width: 770px){
+    footer{
+    }
+    footer section .row{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "contacto"
+        "links"
+        "ubicacion"
+        ;
     }    
+    .row-contacto{
+        width: 100%;
+        grid-area: contacto;
+        text-align: center;
+    }
+    .row-links{
+        width: 100%;
+        grid-area: links;
+        text-align: center;
+    }
+    .row-ubicacion{
+        width: 100%;
+        grid-area: ubicacion;
+        text-align: center;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+    }
 }
+
+@media screen and (max-width: 580px) {
+    nav .row{
+        display: grid;
+        grid-template-rows: repeat(3,50px);
+        grid-template-areas: 
+        "inicio"
+        "servicio"
+        "contacto"
+        ;
+    }
+    .enlace-home{
+        grid-area: inicio;
+        width: 100%;
+        background-color: black;
+    }
+    .enlace-service{
+        grid-area: servicio;
+        width: 100%;
+        background-color: black;
+    }
+    .enlace-contact{
+        grid-area: contacto;
+        width: 100%;
+        background-color: black;
+    }
+
+    main{
+        margin-top: 120px;
+    }
+} 

@@ -52,6 +52,11 @@
     margin: auto;
 }
 
+.margin-main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* Contenedor */
 
 header{
@@ -75,6 +80,26 @@ nav ul li{
     align-items: center;
     justify-content: center;
     border: 10px white solid;
+}
+
+/* Contacto contenedor */
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-contact input{
+    width: 90%;
+}
+
+.nombre, .email, .telefono{
+    height: 40px;
+}
+.consulta{
+    height: 300px;
 }
 
 @media screen {

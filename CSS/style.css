@@ -6,6 +6,86 @@
     text-decoration: none;
 }
 
+/* Bootstrap Correciones */
+
+.padding-margin-none{
+    padding: 0;
+    margin: 0;
+}
+
+.decoration-none{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-style-tittle{
+    color: #80dce0;
+    text-decoration: underline;
+}
+
+.text-style-contact{
+    color: rgb(187, 187, 187);
+    text-decoration: underline;
+}
+
+.text{
+    color: white;
+}
+
+.background-black{
+    background-color: black;
+}
+
+.prueba{
+    display: inline-block;
+}
+
+.img{
+    height: 30px;
+}
+
+.contenedor-img{
+    width: auto;
+    height: 30px;
+    padding: 0;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+}
+
+/* Contenedor */
+
+header{
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://884e910d64.clvaw-cdnwnd.com/c9bf1596b060169a98f1c40490d409e7/200000189-8f10f8f111/Reparaciones-De-Computadoras.jpeg?ph=884e910d64);
+    background-color: #80dce0;
+    object-fit: cover
+}
+
+nav ul{
+    height: 50px
+}
+
+nav ul li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px white solid;
+}
 main{
     width: 100%;
     display: flex;
@@ -31,7 +111,7 @@ header{
 
 nav ul{
     height: 50px;
-    border: 2px solid black;
+    background-color: black;
     display: grid;
     grid-column: 1fr 1fr 1fr;
 
@@ -41,7 +121,7 @@ nav ul{
 }
 
 nav ul .enlace-1{
-    border: 2px solid black;
+    border: 1px solid white;
     grid-area: enlace-1;
     display: flex;
     justify-content: center;
@@ -51,15 +131,14 @@ nav ul .enlace-1{
 nav ul .enlace-1 a{
     height: 25px;
     width: 100px;
-    text-align: center;
-    color: black;
+    text-align: center;;
 }
 nav ul .enlace-1 a:hover{
     background-color: rgb(167, 167, 167);
 }
 
 nav ul .enlace-2{
-    border: 2px solid black;
+    border: 1px solid white;
     grid-area: enlace-2;
     display: flex;
     justify-content: center;
@@ -69,14 +148,13 @@ nav ul .enlace-2 a{
     height: 25px;
     width: 100px;
     text-align: center;
-    color: black;
 }
 nav ul .enlace-2 a:hover{
     background-color: rgb(167, 167, 167);
 }
 
 nav ul .enlace-3{
-    border: 2px solid black;
+    border: 1px solid white;
     grid-area: enlace-3;
     display: flex;
     justify-content: center;
@@ -86,7 +164,6 @@ nav ul .enlace-3 a{
     height: 25px;
     width: 100px;
     text-align: center;
-    color: black;
 }
 nav ul .enlace-3 a:hover{
     background-color: rgb(167, 167, 167);
@@ -96,24 +173,16 @@ nav ul .enlace-3 a:hover{
 
 /* Grid Informacion */
 
-.informacion, .enlace, .nosotros, .contacto{
-    border: 2px solid black;
-}
-
 .informacion{
     display: grid;
     width: 90vh;
+    margin-top: 20px;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-
     grid-template-areas:
     "info-1 info-2"
     "info-3 info-4"
     ;
-}
-
-.informacion article{
-    border: 1px solid black;
 }
 
 /* Info 1 */
@@ -229,13 +298,18 @@ nav ul .enlace-3 a:hover{
 
 /* Enlace info */
 
+.enlace{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
 .enlace div{
-    width: 90vh;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
 }
 .enlace div a{
     display: flex;
@@ -243,7 +317,7 @@ nav ul .enlace-3 a:hover{
     align-items: center;
     height: 30px;
     width: 100px;
-    border: 2px solid black;
+    border: white solid;
     border-radius: 15px
 }
 
@@ -253,6 +327,7 @@ nav ul .enlace-3 a:hover{
 .nosotros{
     display: grid;
     width: 90vh;
+    margin-bottom: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 100px 100px 100px;
 
@@ -269,9 +344,6 @@ nav ul .enlace-3 a:hover{
     grid-template-columns: 1fr 1fr;
 }
 
-.titulo, .nosotros-image, .nosotros-1, .nosotros-2, .nosotros-3{
-    border: 1px solid black;
-}
 .titulo{
     display: flex;
     align-items: center;
@@ -300,6 +372,7 @@ nav ul .enlace-3 a:hover{
 .contacto{
     display: grid;
     width: 90vh;
+    margin-bottom: 20px;
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas: 
@@ -311,118 +384,23 @@ nav ul .enlace-3 a:hover{
     grid-area: contacto-map;
     display: flex;
     justify-content: center;
+    margin-bottom:
 }
 .contacto-info{
     grid-area: contacto-info;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
+    align-items: center;   
+    row-gap: 20px;
 }
 input{
-    width: 50%;
+    width: 80%;
 }
 .nombre, .email, .telefono{
     height: 30px
 }
 .consulta{
-    height: 50px;
+    height: 90px;
 }
 
-/* Footer */
-
-
-footer{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .contenedor-footer{
-    width: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "footer-contacto enlace-pag ubicacion"
-    ;
-    border: 2px solid black;
-}
-
-/* Footer contacto */
-
-footer .contenedor-footer .footer-contacto{
-    grid-area: footer-contacto;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    grid-template-areas: 
-    "footer-text"
-    "footer-info"
-    ;
-}
-footer .contenedor-footer .footer-contacto .footer-text{
-    grid-area: footer-text;
-} 
-footer .contenedor-footer .footer-contacto ul{
-    grid-area: footer-info;
-}
-
-footer .contenedor-footer .footer-contacto a div{
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
-}
-
-
-
-
-/*  footer .contenedor-footer .footer-contacto{
-    grid-area: footer-contacto;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "contacto contacto"
-    "img-insta text-insta"
-    "img-whatsapp text-whatsapp"
-    "img-face text-face"
-    "img-tel text-tel"    
-    ;
-}
-footer .contenedor-footer .footer-contacto h2{
-    grid-area: contacto;
-}
-footer .contenedor-footer .footer-contacto .instagram div{
-    grid-area: img-insta;
-}
-footer .contenedor-footer .footer-contacto .instagram h2{
-    grid-area: text-insta;
-}
-footer .contenedor-footer .footer-contacto .whatsapp div{
-    grid-area: img-whatsapp;
-}
-footer .contenedor-footer .footer-contacto .whatsapp h2{
-    grid-area: text-whatsapp;
-}
-footer .contenedor-footer .footer-contacto .facebook div{
-    grid-area: img-face;
-}
-footer .contenedor-footer .footer-contacto .facebook h2{
-    grid-area: text-face;
-}
-footer .contenedor-footer .footer-contacto .tel div{
-    grid-area: img-tel;
-}
-footer .contenedor-footer .footer-contacto .tel h2{
-    grid-area: text-tel
-}
-*/
-
-footer .contenedor-footer .enlace-pag{
-    grid-area: enlace-pag;
-}
-footer .contenedor-footer .ubicacion{
-    grid-area: ubicacion;
-}

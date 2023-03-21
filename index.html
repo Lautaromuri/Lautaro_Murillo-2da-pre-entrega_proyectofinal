@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
@@ -15,15 +21,15 @@
         <p>Soporte Tecnico de PC, Notebook y Celulares</p>
     </header>
     <nav>
-        <ul>
-            <li class="enlace-1">
-                <a href="./index.html">Inicio</a>
+        <ul class="padding-margin-none">
+            <li class="enlace-1 ">
+                <a class="decoration-none" href="./index.html">Inicio</a>
             </li>
             <li class="enlace-2">
-                <a href="./servicios.html">Servicio</a>
+                <a class="decoration-none" href="./servicios.html">Servicio</a>
             </li>
             <li class="enlace-3">
-                <a href="./contacto.html">Contacto</a>
+                <a class="decoration-none" href="./contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -34,7 +40,7 @@
                 <div class="img-1">
                     <img src="https://d1di2lzuh97fh2.cloudfront.net/files/1a/1al/1als6x.svg?ph=884e910d64&border=107ed1&outline=104776&color=105389" alt="">
                 </div>
-                <h2 class="titulo-1">Limpieza y Mantenimiento General</h2>
+                <h2 class="titulo-1 text-style-tittle">Limpieza y Mantenimiento General</h2>
                 <p class="parrafo-1">Se realiza una Limpieza y Mantenimiento de Hardware y Software para optimizar el funcionamiento de tú computo.</p>
             </article>
 
@@ -42,7 +48,7 @@
                 <div class="img-2">
                     <img src="https://d1di2lzuh97fh2.cloudfront.net/files/0h/0ha/0haiww.svg?ph=884e910d64&border=107ed1&outline=104776&color=105389" alt="">
                 </div>
-                <h2 class="titulo-2">Armado de PC</h2>
+                <h2 class="titulo-2 text-style-tittle">Armado de PC</h2>
                 <p class="parrafo-2">Arma y diseña tu PC a medida según tus necesidades (Oficina o Gamer). Con instalación de Windows, Office y programas solicitados.</p>
             </article>
 
@@ -50,7 +56,7 @@
                 <div class="img-3">
                     <img src="https://884e910d64.clvaw-cdnwnd.com/c9bf1596b060169a98f1c40490d409e7/200000013-c0943c0946/windows5.png?ph=884e910d64" alt="">
                 </div>
-                <h2 class="titulo-3">Formateo e Instalacion de Windows</h2>
+                <h2 class="titulo-3 text-style-tittle">Formateo e Instalacion de Windows</h2>
                 <p class="parrafo-3">Formateo e instalación de Windows con o sin perdida de datos. Incluye instalación de programas solicitados.</p>
             </article>
 
@@ -58,14 +64,14 @@
                 <div class="img-4">
                     <img src="https://d1di2lzuh97fh2.cloudfront.net/files/2s/2sv/2sv0fo.svg?ph=884e910d64&border=107ed1&outline=104776&color=105389" alt="">
                 </div>
-                <h2 class="titulo-4">Reparacion de PC General</h2>
+                <h2 class="titulo-4 text-style-tittle">Reparacion de PC General</h2>
                 <p class="parrafo-4">Se aíslan los problemas de tu computadora o laptop y, en base de protocolo de búsqueda de fallas propio, se resuelven.</p>
             </article>
         </section>
 
         <section class="enlace">
             <div>
-                <a href="./servicios.html">Servicio</a>
+                <a class="decoration-none" href="./servicios.html">Servicio</a>
             </div>
         </section>
 
@@ -115,67 +121,80 @@
         </section>
     </main>
 
-    <footer>
-    <section class="contenedor-footer">
-        <section class="footer-contacto">
-            <div class="footer-text">
-                <h2>Contacto</h2>
-            </div>
-            <ul>
-                <li>
-                    <a href="">
-                        <div>
-                            <img src="image\icons8-instagram-24.png" alt="">
-                        </div>
-                        <h2>Instagram</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div>
-                            <img src="image\icons8-whatsapp-30.png" alt="">
-                        </div>
-                        <h2>WhatsApp</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div>
-                            <img src="image\icons8-facebook-50.png" alt="">
-                        </div>
-                        <h2>Facebook</h2> 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div>
-                            <img src="image\icons8-teléfono-30.png" alt="">
-                        </div>
-                        <h2>Telefono</h2>
-                    </a>
-                </li>
-            </ul>    
-        </section>
-
-        <section class="enlace-pag">
-            <ul>
-                <li>
-                    <a href="">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Servicios</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="ubicacion">
-            <h2>Ubicacion</h2>
-            <p>Direcion del local</p>
-        </section>
+    <footer class="background-black">
+        <section class="container" >
+            <section class="row">
+                <section class="col-lg-4 col-sm-4 col-4">
+                    <div>
+                        <h2 class="text-style-contact">Contacto</h2>
+                    </div>
+                    <ul class="padding-margin-none">
+                        <li class="decoration-none">
+                            <a class="decoration-none display-inline-block" href="">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 contenedor-img">
+                                        <img class="img" src="image\icons8-instagram-24.png" alt="">
+                                    </div>
+                                    <h2 class="col-lg-8 col-sm-8">Instagram</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="decoration-none ">
+                            <a class="decoration-none display-inline-block" href="">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 contenedor-img">
+                                        <img class="img" src="image\icons8-whatsapp-30.png" alt="">
+                                    </div>
+                                    <h2 class="col-lg-8 col-sm-8">WhatsApp</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="decoration-none">
+                            <a class="decoration-none display-inline-block" href="">
+                                 <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-4 contenedor-img">
+                                        <img class="img" src="image\icons8-facebook-50.png" alt="">
+                                    </div>
+                                    <h2 class="col-lg-8 col-sm-8">Facebook</h2> 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="decoration-none">
+                            <a class="decoration-none display-inline-block" href="">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-4 contenedor-img">
+                                        <img class="img" src="image\icons8-teléfono-30.png" alt="">
+                                    </div>
+                                    <h2 class="col-lg-8 col-sm-8">Telefono</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>    
+                </section>
+        
+                <section class="col-lg-4 col-sm-4">
+                    <div>
+                        <h2 class="text-style-contact">Links</h2>
+                    </div>
+                    <ul>
+                        <li class="decoration-none">
+                            <a class="decoration-none" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="decoration-none">
+                            <a class="decoration-none" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="decoration-none">
+                            <a class="decoration-none" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </section>
+        
+                <section class="col-lg-4 col-sm-4">
+                    <h2 class="text-style-contact">Ubicacion</h2>
+                    <p class="text">Direcion del local</p>
+                </section>
+            </section>
     </section>
-    </footer>d
+    </footer>
 </body>
 </html>

@@ -103,8 +103,6 @@ nav ul li{
 }
 
 @media screen and (max-width: 770px){
-    footer{
-    }
     footer section .row{
         display: grid;
         grid-template-rows: repeat(3,auto);

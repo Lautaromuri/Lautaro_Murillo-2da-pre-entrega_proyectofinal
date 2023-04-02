@@ -1,0 +1,119 @@
+@media (max-width: 800px){
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        div{
+            .logo{
+                margin-left: 20px !important;
+                width: 200px;
+                transition: none;
+                &:hover{
+                    transform: none;
+                }
+            }
+    
+            .nav-bars{
+                color: white;
+                margin-right: 20px !important;
+                background: none;
+                border: none;
+                font-size: 30px;
+                display: block;
+            }
+
+            #check:checked ~ul{
+                left: 0;
+            }
+    
+            ul{
+                position: fixed;
+                top: 80px;
+                height: calc(100vh - 80px);
+                width: 100%;
+                background-color: rgb(3, 82, 82);
+                transition: all 0.5s;
+                left: 100%;
+                li{
+                    display: flex;
+                    margin: 20px 0 !important;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: auto !important;
+                    transition: none;
+                    &:hover{
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+    header{
+        display: none;
+    }
+
+    main, .main-servicio{
+        margin-top: 90px !important;
+    }
+
+    .informacion{
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "info-1" 
+        "info-2"
+        "info-3" 
+        "info-4"
+        "enlace" 
+        ;
+    }
+    .enlace-info-2{
+        .contenedor-enlace{
+            transition: none;
+
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+
+    .contenedor-contacto{
+        .contacto{
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 590px){
+    .contenedor-contact{
+        flex-direction: column; /*  */
+        gap: 30px !important; /*  */
+    }
+}
+
+@media (max-width: 425px){
+    footer{
+        width: 100%;
+        background-color: #1f1f20;
+        .pie{
+            margin: 0 5% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            align-items: center;
+
+            .contacto-enlace{
+                ul{
+                    display: flex;
+                    flex-direction: row ;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}

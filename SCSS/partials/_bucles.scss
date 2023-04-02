@@ -9,7 +9,7 @@
 
 @for $num from 1 to 5{
     .info-#{$num}{
-        grid: info-#{$num};
+        grid-area: info-#{$num};
         display: grid;
         column-gap: 10px;
         row-gap: 10px;
@@ -64,6 +64,45 @@
 @for $num from 1 to 6{
     .pregunta-#{$num}{
         width: 100%;
-        display: block;
+        h2{
+            border: 2px solid black;
+            padding: 2% !important;
+        }
+        p{
+            padding: 1% !important;
+        }
+    }
+}
+
+@for $num from 1 to 5{
+    .cont-cel-#{$num}{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    @for $num from 1 to 5{
+        .contenedor-enlace-#{$num}{
+            display: inline-flex;
+            margin-bottom: 10px !important;
+            align-items: center;
+            justify-content: center;
+            div{
+                height: 30px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @for $num from 1 to 5{
+        .contenedor-enlace-#{$num}{
+            display: none;
+        }
+        .cont-cel-#{$num}{
+            display: block;
+            flex-direction: row;
+        }
     }
 }

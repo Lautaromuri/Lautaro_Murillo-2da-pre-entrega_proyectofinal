@@ -1,4 +1,5 @@
 @import "partials/reset";
+@import "partials/general";
 @import "partials/variables";
 @import "partials/mixin";
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
@@ -6,100 +7,6 @@
 
 .text{
     color: $color-text;
-}
-
-nav{
-    div{
-        background-color: #1f1f20;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo{
-            margin-left: 20px !important;
-            width: 200px;
-            transition: $animacion-nav-bar;
-            &:hover{
-                transform: scale(1.1);
-            }
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        ul{
-            li{
-                display: inline-block;
-                padding: 0 20px !important;
-                transition: $animacion-nav-bar;
-                color: white !important;
-                a{
-                    color: $color-text;
-                }
-                &:hover{
-                    transform: scale(1.3);
-                    a{
-                        color: $color-text;
-                    }
-                }
-            }
-        }
-    }
-}
-
-header{
-    height: auto;
-    width: 100%;
-    div{
-        @extend header;
-        div{
-            position: relative;
-            object-fit: cover;
-            .img-btn-aqua{
-                width: 100%;
-                height: 100%;
-                top: 50%;
-                left: 50%;
-                position: absolute;
-                background-color: #092b5a;
-                transform: translate(-50%,-50%);
-                opacity: .6;
-            }
-            img{
-                width: 100%;
-            }
-            .contenedor-text{
-                top: 50%;
-                left: 50%;
-                position: absolute;
-                transform: translate(-50%,-50%);
-                color: white;
-                .titulo{
-                    h1{
-                        font-size: $big-text;
-                    }
-                    p{
-                        font-size: $text-parrafo;
-                    }
-                }
-                .enlace{
-                    ul{
-                        li{
-                            display: inline-block;
-                            width: 15%;
-                            a{
-                                font-size: $text-parrafo;
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                                border: 1px solid white;
-                                border-radius: 5px
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 main{
@@ -128,6 +35,7 @@ main{
     align-items: center;
     justify-content: center;
     .contenedor-enlace{
+        margin-bottom: 40px !important;
         width: 200px;
         height: 50px;
         text-align: center;
@@ -162,33 +70,42 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
+            
             img{
-                width: 40%;
-                height: 40%;
+                object-fit: contain;
+                width: 50%;
+                height: 50%;
             }
         }
     }
 }
+
 .contenedor-contacto{
     width: 100%;
+    margin: 20px 0 !important;
     .contacto{
-        margin: 20px 10% !important;
+        margin: 0 10% !important;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 2% !important;
         .map{
-            width: 50% !important;
+            width: 100% !important;
         }
         .formulario{
-            background-color: red;
-            width: 50%;
-            form{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between !important;
+            align-items: center;
+
+            .nombre, .email, .telefono, .boton{
                 width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                min-height: 30px;
+            }
+            .consulta{
+                width: 100%;
+                min-height: 150px;
             }
         }
     }
@@ -205,21 +122,23 @@ footer{
         }
 }
 
+/* Servicio.HTML */
 
+.main-servicio{
+    margin: 20px 0 !important;
 
-@import "partials/bucles";
-@import "partials/queries";
+    .contenedor-servicio{
+        margin: 0 5% !important;
+    }
+}
 
 .contenedor-preguntas{
-    margin: 20px 0 !important;
+    margin: 20px 5% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px !important;
-    .contendor-titulo{
-        
-    }
 }
 
 .medio_de_pago{
@@ -227,3 +146,42 @@ footer{
         margin: 20px !important;
     }
 }
+
+/* CONTANCTO.HTML */
+
+.contenedor-contact{
+
+    margin: 20px 0 !important;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5% !important;
+
+    &-info{
+        width: 100%;
+        &-titulo{
+            margin-bottom: 20px !important;
+        }
+        &-direccion{
+            margin-top: 20px !important;
+        }
+    }
+
+    &-form{
+        width: 100%;
+        min-height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        .nombre, .email, .telefono{
+            min-height: 40px;
+        }
+        .consulta{
+            min-height: 300px;
+        }
+    }
+}
+@import "partials/bucles";
+@import "partials/queries";

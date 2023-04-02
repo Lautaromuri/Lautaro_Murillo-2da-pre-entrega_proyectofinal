@@ -11,14 +11,20 @@
     
         <!-- CSS -->
         <link rel="stylesheet" href="./CSS/style.css">
+
+        <script src="https://kit.fontawesome.com/04a45dcda6.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
-    <nav class="container-fluid background-black">
+    <nav>
         <div>
             <div class="logo">
                 <img src="./image/Service Moreno Logo.png" alt="">
             </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="nav-bars">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./servicios.html">Servicios</a></li>
@@ -30,14 +36,14 @@
     </nav>
 
     <header>
-        <div class="btn-cyan">
+        <div>
             <div class= "container-fluid text-center">
                 <div class="img-btn-aqua"></div>
                 <img src="https://884e910d64.clvaw-cdnwnd.com/c9bf1596b060169a98f1c40490d409e7/200000189-8f10f8f111/Reparaciones-De-Computadoras.jpeg?ph=884e910d64"  alt="" >
                 <div class="contenedor-text">
                     <div class="titulo">
-                        <h1 class="text">Servicio Tecnico</h1>
-                        <p class="text">Soporte tecnico de PC, Notebook y celulares</p>
+                        <h1>Servicio Tecnico</h1>
+                        <p>Soporte tecnico de PC, Notebook y celulares</p>
                     </div>
                     <div class="enlace">
                         <ul>
@@ -52,32 +58,37 @@
     </header>
 
     <main>
-        <section class="container margin-main">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div>
-                        <h2 class="text-style-tittle">Escribenos o Llamenos</h2>
-                        <h2 class="text-style-tittle">Num de telefono</h2>
+        <section class="contenedor-contact">
+        
+                <div class="contenedor-contact-info">
+
+                    <div class="contenedor-contact-info-titulo">
+                        <h2>Escribenos o Llamenos</h2>
+                        <h2>Num de telefono</h2>
                         <p>No dudes en contactarnos para resolver tus dudas y darte la mejor solucion</p>
                     </div>
 
-                    <div>
+                    <div class="cont-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6565.366670779313!2d-58.797190744232935!3d-34.63744181898182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc945ac9207d29%3A0x830a078783ecf3cc!2sBingo%20Moreno!5e0!3m2!1ses!2sar!4v1678907913253!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div>
+
+                    <div class="contenedor-contact-info-direccion">
                         <p>Direccion</p>
                         <p>Correo electronico</p>
                     </div>
+
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-6 contacto-info container-contact">
+                <div class="contenedor-contact-form">
+
                     <input class="nombre" type="text" placeholder="Nombre">
                     <input class="email" type="text" placeholder="Email">
                     <input class="telefono" type="text" placeholder="Numero de telefono">
                     <input class="consulta" type="text" placeholder="Consulta">
                     <input class="boton" type="button" value="Enviar">
+
                 </div>
-            </div>
+                
         </section>
     </main>
     
@@ -96,6 +107,9 @@
                                 </div>
                                 <h2>Instagram</h2>
                             </div>
+                            <div class="cont-cel-1">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -105,6 +119,9 @@
                                     <img class="img" src="image\icons8-whatsapp-30.png" alt="">
                                 </div>
                                 <h2>WhatsApp</h2>
+                            </div>
+                            <div class="cont-cel-2">
+                                <i class="fa-brands fa-whatsapp"></i>
                             </div>
                         </a>
                     </li>
@@ -116,6 +133,9 @@
                                 </div>
                                 <h2>Facebook</h2> 
                             </div>
+                            <div class="cont-cel-3">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -125,6 +145,9 @@
                                     <img class="img" src="image\icons8-teléfono-30.png" alt="">
                                 </div>
                                 <h2>Telefono</h2>
+                            </div>
+                            <div class="cont-cel-3">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                         </a>
                     </li>
